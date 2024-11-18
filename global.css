@@ -49,7 +49,7 @@ header nav ul li a:hover {
 main {
   flex: 1;
   padding: 2rem;
-  background: url('../assets/background.jpg') no-repeat center center fixed;
+  background: url('../background.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
