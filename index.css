@@ -1,0 +1,35 @@
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('crypto-chart-bg.jpg') no-repeat center center/cover;
+  color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.hero .cta {
+  background: #ffd700;
+  color: #222;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero .cta:hover {
+  background: #f4a900;
+  color: #fff;
+}

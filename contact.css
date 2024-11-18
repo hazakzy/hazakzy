@@ -1,0 +1,59 @@
+.contact-section {
+    padding: 2rem;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-info {
+    margin-bottom: 2rem;
+  }
+  
+  .contact-info p {
+    font-size: 1rem;
+  }
+  
+  .contact-info a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background: #ffd700;
+    color: #222;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background: #f4a900;
+  }
+  
