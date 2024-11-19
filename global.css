@@ -44,6 +44,20 @@ header nav ul li a:hover {
   transition: color 0.3s ease;
 }
 
+/* Logo Styling */
+.logo {
+  display: block; /* Ensures the image isn't hidden */
+  margin: 0 auto; /* Centers the logo */
+  max-width: 150px; /* Adjust this value as per your design */
+  height: auto; /* Maintains aspect ratio */
+}
+
+/* Optional: Adjust positioning within the header */
+header .logo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 
 /* Main Content Styling */
 main {
