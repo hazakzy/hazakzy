@@ -1,84 +1,56 @@
-/* Blog Page Base */
-.blog-page {
+/* Blog Header */
+.blog-header {
+  text-align: center;
   padding: 2rem 1rem;
-  background: #f9f9f9;
+  background: #222;
+  color: #fff;
 }
 
-.blog-title {
+.blog-header h1 {
   font-size: 2.5rem;
-  color: #333;
-  text-align: center;
-  margin-top: 2rem;
+  color: #f0a500;
 }
 
-.blog-intro {
+.blog-header p {
   font-size: 1.2rem;
-  color: #555;
-  text-align: center;
+  color: #eee;
+}
+
+/* Blog Content */
+.blog-content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+article {
   margin-bottom: 2rem;
-  line-height: 1.5;
-}
-
-/* Blog & Yield Section Shared */
-.blog-content, .yield-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  padding: 0 1rem;
-}
-
-.blog-post, .yield-post {
-  background: #fff;
-  border: 1px solid #ddd;
+  padding: 1.5rem;
+  background: #333;
   border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.blog-post:hover, .yield-post:hover {
-  transform: scale(1.02);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.blog-img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.blog-post h2, .yield-post h2 {
+article h2 {
+  margin: 0 0 1rem;
+  color: #f0a500;
   font-size: 1.5rem;
-  color: #222;
-  margin: 1rem 0 0.5rem;
 }
 
-.blog-post p, .yield-post p {
-  color: #666;
+article p {
+  margin: 0 0 1rem;
+  color: #ccc;
   font-size: 1rem;
-  padding: 0 1rem;
-  margin-bottom: 1rem;
 }
 
 .read-more {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  margin-bottom: 1rem;
-  background: #f0a500;
-  color: #fff;
-  border-radius: 5px;
+  color: #f0a500;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .read-more:hover {
-  background: #d48e00;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .blog-content, .yield-content {
-    grid-template-columns: 1fr;
-  }
+  color: #fff;
 }
