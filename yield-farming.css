@@ -1,0 +1,119 @@
+/* Yield Farming Header */
+.yield-header {
+  text-align: center;
+  padding: 3rem;
+  background: linear-gradient(to bottom, #222, #444);
+  color: #fff;
+}
+
+.yield-header h1 {
+  font-size: 2.5rem;
+  color: #f0a500;
+  margin-bottom: 0.5rem;
+}
+
+.yield-header p {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-top: 0.5rem;
+}
+
+/* Yield Strategies Section */
+.yield-strategies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.strategy-card {
+  background: #333;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.strategy-content {
+  padding: 1.5rem;
+  color: #fff;
+}
+
+.strategy-content h2 {
+  font-size: 1.5rem;
+  color: #f0a500;
+  margin-bottom: 0.8rem;
+}
+
+.strategy-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.strategy-content p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.strategy-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .yield-header h1 {
+    font-size: 2rem;
+  }
+
+  .yield-header p {
+    font-size: 1rem;
+  }
+}
+/* Lightbox Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  margin: auto;
+  display: block;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #f0a500;
+}
+
+/* When clicking the image, add cursor pointer */
+.expandable-img {
+  cursor: pointer;
+}
