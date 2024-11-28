@@ -77,22 +77,23 @@
 }
 /* Lightbox Modal Styles */
 .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Dark background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-content {
-    max-width: 90%;  /* Limit the width to 90% of the viewport */
-    max-height: 90%; /* Limit the height to 90% of the viewport */
-    object-fit: contain; /* Ensure the image fits well */
+  max-width: 90%;
+  max-height: 90%;
+  margin: auto;
+  display: block;
 }
 
 .close-btn {
