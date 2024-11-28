@@ -1,34 +1,20 @@
-// lightbox.js
+document.querySelectorAll('.expandable-img').forEach(image => {
+    image.addEventListener('click', function (event) {
+        const imgSrc = event.target.getAttribute('data-img'); // Get the image source from the data-img attribute
+        const modal = document.createElement('div'); // Create a new div for the modal
+        modal.classList.add('modal'); // Add the modal class for styling
 
-// Get the modal
-var modal = document.getElementById("imageModal");
+        // Create an img element and set the source to the clicked image's data-img
+        const modalImg = document.createElement('img');
+        modalImg.src = imgSrc;
+        modalImg.classList.add('modal-content'); // Add a class for the modal content styling
+        modal.appendChild(modalImg); // Append the image to the modal
 
-// Get the image elements
-var images = document.querySelectorAll(".expandable-img");
+        document.body.appendChild(modal); // Append the modal to the body
 
-// Get the modal image element
-var modalImg = document.getElementById("modal-img");
-
-// Get the close button
-var closeBtn = document.getElementsByClassName("close-btn")[0];
-
-// Loop through all images to add click event
-images.forEach(function(img) {
-  img.addEventListener("click", function() {
-    var imgSrc = this.getAttribute("data-img");
-    modal.style.display = "flex";
-    modalImg.src = imgSrc;
-  });
+        // Close the modal when clicked
+        modal.addEventListener('click', () => {
+            document.body.removeChild(modal); // Remove the modal on click
+        });
+    });
 });
-
-// When the user clicks on the close button, close the modal
-closeBtn.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside the image, close the modal
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
