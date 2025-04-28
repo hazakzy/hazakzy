@@ -1,8 +1,8 @@
 /* Yield Farming Header */
 .yield-header {
   text-align: center;
-  padding: 3rem;
-  background: linear-gradient(to bottom, #222, #444);
+  padding: 3rem 1rem;
+  background: linear-gradient(to bottom, #222, #333);
   color: #fff;
 }
 
@@ -13,79 +13,71 @@
 }
 
 .yield-header p {
-  font-size: 1.2rem;
-  color: #ddd;
-  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  color: #ccc;
+  max-width: 700px;
+  margin: 0.5rem auto 0;
+  line-height: 1.6;
 }
 
-/* Yield Strategies Section */
+/* Strategies Grid */
 .yield-strategies {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+/* Individual Strategy Card */
 .strategy-card {
-  background: #333;
-  border-radius: 12px;
+  background: #fff;
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.strategy-content {
-  padding: 1.5rem;
-  color: #fff;
+.strategy-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.strategy-content h2 {
-  font-size: 1.5rem;
-  color: #f0a500;
-  margin-bottom: 0.8rem;
+.strategy-card h3 {
+  font-size: 1.3rem;
+  color: #222;
+  margin: 1rem;
+  text-align: center;
+}
+
+.strategy-content {
+  padding: 0 1rem 1.5rem;
+  text-align: center;
 }
 
 .strategy-content img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 8px;
+  cursor: pointer;
   margin-bottom: 1rem;
 }
 
 .strategy-content p {
   font-size: 1rem;
-  color: #ccc;
+  color: #555;
+  line-height: 1.6;
   margin-bottom: 1rem;
 }
 
-.strategy-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .yield-header h1 {
-    font-size: 2rem;
-  }
-
-  .yield-header p {
-    font-size: 1rem;
-  }
-}
-/* Lightbox Modal Styles */
+/* Modal (Lightbox) Styles */
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  overflow: auto;
+  z-index: 1000;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
   justify-content: center;
   align-items: center;
 }
@@ -93,27 +85,43 @@
 .modal-content {
   max-width: 90%;
   max-height: 90%;
-  margin: auto;
-  display: block;
+  border-radius: 8px;
 }
 
 .close-btn {
   position: absolute;
-  top: 20px;
-  right: 35px;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
   color: #fff;
-  font-size: 40px;
-  font-weight: bold;
   cursor: pointer;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 
-.close-btn:hover,
-.close-btn:focus {
+.close-btn:hover {
   color: #f0a500;
 }
 
-/* When clicking the image, add cursor pointer */
-.expandable-img {
-  cursor: pointer;
+/* Footer Fix */
+footer {
+  background: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .yield-header h1 {
+    font-size: 2rem;
+  }
+  .yield-header p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  .strategy-content p {
+    font-size: 0.95rem;
+  }
 }
