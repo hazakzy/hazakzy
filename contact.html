@@ -3,46 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Hazak Shuaibu</title>
+  <title>Contact – Hazak Shuaibu</title>
   <link rel="stylesheet" href="global.css">
   <link rel="stylesheet" href="contact.css">
   <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
+
   <header>
-        <div class="container">
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="yield-farming.html">Yield Farming</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-      </nav>    
-    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="yield-farming.html">Yield Farming</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
   </header>
+
   <main>
-    <section class="contact-section">
-      <h2>Get in Touch</h2>
-      <p>Feel free to reach out for collaboration, inquiries, or opportunities.</p>
+    <section class="contact-header">
+      <h1>Get in Touch</h1>
+      <p>If you’re interested in collaborating, have questions, or want to learn more, drop me a message!</p>
+    </section>
+
+    <section class="contact-container">
       <div class="contact-info">
-        <p><strong>Email:</strong> hazakzy@gmail.com</p>
-        <p><strong>Twitter:</strong> <a href="https://twitter.com/hazakzy" target="_blank">@hazakzy</a></p>
+        <div>
+          <h3>Email</h3>
+          <p><a href="mailto:hazakzy@gmail.com">hazakzy@gmail.com</a></p>
+        </div>
+        <div>
+          <h3>Twitter</h3>
+          <p><a href="https://x.com/hazakzy" target="_blank">@hazakzy</a></p>
+        </div>
       </div>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
+
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
       </form>
     </section>
   </main>
+
   <footer>
-    <p>&copy; 2024 Hazak Shuaibu. All Rights Reserved.</p>
+    <p>© 2024 Hazak Shuaibu – All Rights Reserved</p>
   </footer>
+
 </body>
 </html>
