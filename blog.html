@@ -1,87 +1,153 @@
+html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hazak Shuaibu's crypto research and DeFi insights, featuring on-chain analysis, yield strategies, and protocol deep dives.">
+  <meta property="og:title" content="Blog - Hazak Shuaibu">
+  <meta property="og:description" content="Actionable crypto and DeFi research by Hazak Shuaibu, covering yield farming, airdrops, and smart money trends.">
+  <meta property="og:image" content="https://hazakzy.vercel.app/images/eigen-layer.jpg">
+  <meta property="og:url" content="https://hazakzy.vercel.app/blog.html">
   <title>Blog - Hazak Shuaibu</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="global.css">
   <link rel="stylesheet" href="blog.css">
-  <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
-
   <header>
-    <nav>
-      <ul>
+    <nav class="container">
+      <div class="brand">Hazak Shuaibu</div>
+      <button class="hamburger" aria-label="Toggle menu">☰</button>
+      <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="blog.html" class="active">Blog</a></li>
         <li><a href="yield-farming.html">Yield Farming</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.pdf" class="resume-link" target="_blank">Resume</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main class="container">
     <section class="blog-header">
-      <h1>Insights & Alpha Reports</h1>
-      <p>Explore detailed reports, ecosystem analyses, and DeFi opportunities — powered by on-chain research and smart money tracking.</p>
+      <h1>Crypto & DeFi Insights</h1>
+      <p>Actionable research and alpha by Hazak Shuaibu, Crypto Research Analyst & DeFi Strategist, bridging on-chain trends with retail-friendly storytelling.</p>
+    </section>
+
+    <section class="intro">
+      <p>With 4+ years in crypto, I deliver deep dives on DeFi protocols, yield strategies, and smart money moves. Contributor to LukCapital, WhaleMoves Traders, and founder of CryptoEdge Substack.</p>
+    </section>
+
+    <section class="skills">
+      <h2>Core Skills</h2>
+      <div class="skills-list">
+        <span>DeFi & Yield Strategies</span>
+        <span>On-Chain Analysis (Nansen, DeFiLlama)</span>
+        <span>Tokenomics & Protocol Research</span>
+        <span>Content Creation (Substack, X)</span>
+        <span>Market Tools (TradingView, Metabase)</span>
+      </div>
     </section>
 
     <section class="blog-posts">
       <article class="blog-card">
+        <div class="blog-image" style="background-image: url('images/flowx-finance.jpg');"></div>
         <div class="blog-content">
-          <h2>Exploring Modular Blockchains </h2>
-          <p>Published via Crypto Edge Substack — How modular blockchains like celestia and eigenlayer are transforming DeFi by separating tasks across layers for scalability & customization..</p>
-          <a href="https://open.substack.com/pub/thecryptoedge/p/how-modular-blockchains-are-reshaping" class="read-more" target="_blank">Read Report →</a>
-        </div>
-      </article>
-      
-      <article class="blog-card">
-        <div class="blog-content">
-          <h2>Eigen Layer Analysis</h2>
-          <p>A deep dive into Eigen Layer’s innovative restaking ecosystem and its impact on Ethereum's security and yield markets.</p>
-          <a href="https://x.com/hazakzy/status/1680458353837785088?s=46&t=dNB_GkzSITZvGxRKLsdV_g" class="read-more" target="_blank">View Full Thread →</a>
+          <h2>FlowX Finance Deep Dive</h2>
+          <p>Analyzing FlowX’s yield farming and liquidity provision strategies, with insights on airdrop opportunities and protocol growth.</p>
+          <a href="https://thecryptoedgesubstack.com/flowx-finance" class="read-more" target="_blank">Read Report →</a>
         </div>
       </article>
 
       <article class="blog-card">
+        <div class="blog-image" style="background-image: url('images/eigen-layer.jpg');"></div>
+        <div class="blog-content">
+          <h2>EigenLayer Restaking Analysis</h2>
+          <p>A deep dive into EigenLayer’s restaking ecosystem, its impact on Ethereum’s security, and yield opportunities for early adopters.</p>
+          <a href="https://open.substack.com/pub/lukcapital/p/eigenlayer-analysis" class="read-more" target="_blank">Read Report →</a>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-image" style="background-image: url('images/landx-protocol.jpg');"></div>
         <div class="blog-content">
           <h2>LandX Protocol Breakdown</h2>
-          <p>Understanding LandX: tokenized farmland assets, revenue-sharing models, and DeFi-native agricultural finance innovation.</p>
-          <a href="https://x.com/hazakzy/status/1675427703732727809?s=46&t=dNB_GkzSITZvGxRKLsdV_g" class="read-more" target="_blank">View Full Thread →</a>
+          <p>Exploring LandX’s tokenized farmland assets and DeFi-native agricultural finance, with focus on revenue-sharing models.</p>
+          <a href="https://x.com/hazakzy/status/1675427703732727809?s=46&t=dNB_GkzSITZvGxRKLsdV_g" class="read-more" target="_blank">View Thread →</a>
         </div>
       </article>
 
       <article class="blog-card">
+        <div class="blog-image" style="background-image: url('images/gravita-protocol.jpg');"></div>
         <div class="blog-content">
           <h2>Gravita Protocol Deep Dive</h2>
-          <p>Analyzing Gravita Network: its role in the DeFi leverage ecosystem, risk factors, and opportunities for early adopters.</p>
-          <a href="https://x.com/hazakzy/status/1663068394990518272?s=46&t=dNB_GkzSITZvGxRKLsdV_g" class="read-more" target="_blank">View Full Thread →</a>
+          <p>Analyzing Gravita’s role in DeFi leverage, with insights on risk factors and opportunities for yield farmers.</p>
+          <a href="https://x.com/hazakzy/status/1663068394990518272?s=46&t=dNB_GkzSITZvGxRKLsdV_g" class="read-more" target="_blank">View Thread →</a>
         </div>
       </article>
 
-      <article class="blog-card">
+      <article class="blog-card hidden">
+        <div class="blog-image" style="background-image: url('images/unichain-uniswap.jpg');"></div>
         <div class="blog-content">
           <h2>Unichain & Uniswap V4 Report</h2>
-          <p>Published via Luk Capital Substack — reviewing Unichain advancements and Uniswap V4's major feature upgrades for liquidity providers.</p>
+          <p>Contributor to LukCapital’s analysis of Unichain advancements and Uniswap V4’s upgrades for liquidity providers.</p>
           <a href="https://open.substack.com/pub/lukcapital/p/unichain-and-uniswap-v4?r=1ls6qr&utm_medium=ios" class="read-more" target="_blank">Read Report →</a>
         </div>
       </article>
 
-      <article class="blog-card">
+      <article class="blog-card hidden">
+        <div class="blog-image" style="background-image: url('images/infini-finance.jpg');"></div>
         <div class="blog-content">
-          <h2>Plume: The pioneering modular Layer2</h2>
-          <p>Published via Luk Capital Substack — This report explores Plume’s mission, technological innovations, and investment potential..</p>
-          <a href="https://lukcapital.substack.com/p/plume-real-world-asset-tokenization?r=1ls6qr" class="read-more" target="_blank">Read Report →</a>
+          <h2>Infini Finance Report</h2>
+          <p>Breaking down Infini Finance’s innovative DeFi strategies and tokenomics for maximizing yield opportunities.</p>
+          <a href="https://thecryptoedgesubstack.com/infini-finance" class="read-more" target="_blank">Read Report →</a>
+        </div>
+      </article>
+
+      <article class="blog-card hidden">
+        <div class="blog-image" style="background-image: url('images/yieldfi-protocol.jpg');"></div>
+        <div class="blog-content">
+          <h2>YieldFi Protocol Breakdown</h2>
+          <p>Exploring YieldFi’s liquid staking and automated yield optimization, with metrics on yUSD and APY opportunities.</p>
+          <a href="https://thecryptoedgesubstack.com/yieldfi-protocol" class="read-more" target="_blank">Read Report →</a>
         </div>
       </article>
     </section>
+
+    <div class="load-more-container">
+      <button class="load-more">Load More Posts</button>
+    </div>
   </main>
 
   <footer>
-    <p>© 2024 Hazak Shuaibu. All rights reserved.</p>
+    <p>© 2025 Hazak Shuaibu. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://x.com/hazakzy" target="_blank">X (@hazakzy)</a>
+      <a href="https://thecryptoedgesubstack.com" target="_blank">CryptoEdge Substack</a>
+      <a href="https://www.tradingview.com/u/hazakzy" target="_blank">TradingView</a>
+      <a href="resume.pdf" target="_blank">Download Resume</a>
+    </div>
   </footer>
 
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      hamburger.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+    });
+
+    // Load more posts
+    const loadMoreBtn = document.querySelector('.load-more');
+    const hiddenPosts = document.querySelectorAll('.blog-card.hidden');
+    loadMoreBtn.addEventListener('click', () => {
+      hiddenPosts.forEach(post => post.classList.remove('hidden'));
+      loadMoreBtn.style.display = 'none';
+    });
+  </script>
 </body>
 </html>
