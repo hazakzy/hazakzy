@@ -1,12 +1,95 @@
-/* Hero Section */
+```css
+/* Index-specific styles */
+body {
+  background-color: #222222;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #222222;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  color: #f0a500;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-menu li a:hover {
+  color: #f0a500;
+}
+
+.nav-menu li a.active {
+  color: #f0a500;
+  font-weight: bold;
+}
+
+.resume-link {
+  background-color: #f0a500;
+  color: #222222;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.resume-link:hover {
+  background-color: #222222;
+  color: #f0a500;
+  border: 1px solid #f0a500;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Hero Section (from previous CSS, enhanced) */
 .hero {
   text-align: center;
   padding: 5rem 2rem;
-  background: linear-gradient(to bottom, #222, #444);
-  color: #fff;
+  background: linear-gradient(to bottom, #222222, #444444);
+  color: #ffffff;
 }
 
 .hero h1 {
+  font-family: 'Orbitron', sans-serif;
   font-size: 3rem;
   color: #f0a500;
   margin-bottom: 1rem;
@@ -22,7 +105,7 @@
 .hero p {
   font-size: 1.1rem;
   margin-bottom: 2rem;
-  color: #ccc;
+  color: #cccccc;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -42,12 +125,12 @@
   text-decoration: none;
   border-radius: 8px;
   background-color: #f0a500;
-  color: #222;
+  color: #222222;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cta:hover {
-  background-color: #222;
+  background-color: #222222;
   color: #f0a500;
   border: 1px solid #f0a500;
 }
@@ -60,15 +143,186 @@
 
 .cta.secondary:hover {
   background-color: #f0a500;
-  color: #222;
+  color: #222222;
 }
 
-/* Footer */
-footer {
-  background: #222;
-  color: #aaa;
+/* Skills Section */
+.skills {
+  padding: 3rem 0;
   text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+  background-color: #222222;
+}
+
+.skills h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: #f0a500;
+  margin-bottom: 1.5rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.skills-list span {
+  background-color: #f0a500;
+  color: #222222;
+  padding: 8px 15px;
+  border-radius: 4px;
   font-size: 0.9rem;
 }
+
+/* Featured Content Section */
+.featured-content {
+  padding: 3rem 0;
+  background-color: #333333;
+}
+
+.featured-content h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: #f0a500;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.content-card {
+  background-color: #222222;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.content-card:hover {
+  transform: translateY(-5px);
+}
+
+.content-image {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.content-text {
+  padding: 1rem;
+}
+
+.content-text h3 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.content-text p {
+  color: #cccccc;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.read-more {
+  color: #f0a500;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Footer (from previous CSS, enhanced) */
+footer {
+  background: #222222;
+  color: #aaaaaa;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 0;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  color: #f0a500;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #222222;
+    padding: 1rem;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero h2 {
+    font-size: 1rem;
+  }
+
+  .skills-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+```
