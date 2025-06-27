@@ -1,12 +1,9 @@
-css
+```css
 /* Index-specific styles */
-
-/* Hero Section */
 .hero {
   text-align: center;
   padding: 5rem 2rem;
   background: linear-gradient(to bottom, #222222, #444444);
-  color: #ffffff;
 }
 
 .hero h1 {
@@ -39,39 +36,20 @@ css
   gap: 1rem;
 }
 
-.cta {
-  padding: 0.8rem 2rem;
-  font-size: 1rem;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 8px;
-  background-color: #f0a500;
-  color: #222222;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.cta:hover {
-  background-color: #222222;
-  color: #f0a500;
-  border: 1px solid #f0a500;
-}
-
-.cta.secondary {
+.hero-buttons .button.secondary {
   background-color: transparent;
   border: 1px solid #f0a500;
   color: #f0a500;
 }
 
-.cta.secondary:hover {
+.hero-buttons .button.secondary:hover {
   background-color: #f0a500;
   color: #222222;
 }
 
-/* Skills Section */
 .skills {
   padding: 3rem 0;
   text-align: center;
-  background-color: #222222;
 }
 
 .skills h2 {
@@ -96,7 +74,6 @@ css
   font-size: 0.9rem;
 }
 
-/* Featured Content Section */
 .featured-content {
   padding: 3rem 0;
   background-color: #333333;
@@ -110,39 +87,16 @@ css
   margin-bottom: 2rem;
 }
 
-.content-image {
-  height: 150px;
-  background-size: cover;
-  background-position: center;
-}
-
 .content-text {
   padding: 1rem;
 }
 
-.content-text h3 {
-  font-size: 1.2rem;
-  color: #ffffff;
-  margin-bottom: 0.5rem;
+.expandable-img {
+  cursor: pointer;
+  height: 150px;
+  object-fit: cover;
 }
 
-.content-text p {
-  color: #cccccc;
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
-}
-
-.read-more {
-  color: #f0a500;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.read-more:hover {
-  text-decoration: underline;
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2.5rem;
@@ -176,3 +130,4 @@ css
     align-items: center;
   }
 }
+```
