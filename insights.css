@@ -1,0 +1,114 @@
+```css
+/* Insights-specific styles */
+.insights-header {
+  text-align: center;
+  padding: 3rem 0;
+  background: linear-gradient(to bottom, #222222, #444444);
+}
+
+.insights-header h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  color: #f0a500;
+  margin-bottom: 1rem;
+}
+
+.insights-header p {
+  color: #cccccc;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.intro {
+  background-color: #333333;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.intro p {
+  color: #cccccc;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.skills {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.skills h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: #f0a500;
+  margin-bottom: 1.5rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.skills-list span {
+  background-color: #f0a500;
+  color: #222222;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.research-posts, .yield-strategies {
+  padding: 3rem 0;
+}
+
+.research-posts h2, .yield-strategies h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: #f0a500;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.content-text {
+  padding: 1rem;
+}
+
+.expandable-img {
+  cursor: pointer;
+  height: 150px;
+  object-fit: cover;
+}
+
+.load-more-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .insights-header h1 {
+    font-size: 2rem;
+  }
+
+  .research-posts h2, .yield-strategies h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .insights-header {
+    padding: 2rem 1rem;
+  }
+
+  .research-posts, .yield-strategies {
+    padding: 2rem 0;
+  }
+
+  .expandable-img {
+    height: 120px;
+  }
+}
+```
